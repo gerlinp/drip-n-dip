@@ -1056,7 +1056,9 @@ section {
   position: relative;
 }
 
-.events::before {
+
+
+ .events::before {
   content: '';
   background-color: rgba(0, 0, 0, 0.8);
   position: absolute;
@@ -1698,4 +1700,30 @@ section {
   font-size: 1rem;
   background: #293B5F;
   color:white !important;
+}
+
+.twitter-timeline {
+  width: 100vw !important;
+  max-width: 400px !important;
+}
+
+.juicer-feed p a {
+  display: none;
+}
+
+ .juicer-button{
+  border-color: #cda45e !important;
+  color: #cda45e !important;
+ }
+ 
+ .j-loading:before {
+  background-color: #cda45e !important;
+ }
+ .juicer-feed h1.referral a {
+  color: #f25951;
+  display: none;
+}
+
+ul .juicer-feed {
+  background-color: red !important;
 }
