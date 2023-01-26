@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>Restaurantly Bootstrap Template - Index</title>
+  <title>Drip N Dip</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
@@ -17,6 +17,7 @@
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
 
   <!-- Vendor CSS Files -->
+  <link href="https://assets.juicer.io/embed.css" media="all" rel="stylesheet" type="text/css" />
   <link href="assets/vendor/animate.css/animate.min.css" rel="stylesheet">
   <link href="assets/vendor/aos/aos.css" rel="stylesheet">
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -43,7 +44,7 @@
     <div class="container d-flex justify-content-center justify-content-md-between">
 
       <div class="contact-info d-flex align-items-center">
-        <i class="bi bi-phone d-flex align-items-center"><span>(508)-343-8901</span></i>
+        <!-- <i class="bi bi-phone d-flex align-items-center"><span>(508)-343-8901</span></i> -->
       </div>
     </div>
   </div>
@@ -61,9 +62,7 @@
           <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
           <li><a class="nav-link scrollto" href="#about">About</a></li>
           <li><a class="nav-link scrollto" href="#menu">Menu</a></li>
-
-          <li><a class="nav-link scrollto" href="#events">Events</a></li>
-  
+          <li><a class="nav-link scrollto" href="#events">Events</a></li> 
           <li><a class="nav-link scrollto" href="#gallery">Gallery</a></li>
           <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
         </ul>
@@ -110,7 +109,7 @@
           <div class="col-lg-6 pt-4 pt-lg-0 order-2 order-lg-1 content">
             <h3>Our Journey</h3>
             <p>
-              Like most successful businesses, our story begins with passion. A love for chocolate combined with lots of hard work culminated in the doors of our Chocolate Shop opening for the first time in 2021. However we grow, we aim stay true to our mission: providing exquisitely delicious products and hands-on chocolate experiences delicious products and hands-on chocolate experiences to all our customers. We insist on using the best ingredients, and puttin our whole heart into every order. No wonder our customers keep coming back for more!
+              Like most successful businesses, our story begins with passion. A love for chocolate combined with lots of hard work culminated in the doors of our Chocolate Shop opening for the first time in 2021. However we grow, we aim to stay true to our mission: providing exquisitely delicious products and hands-on chocolate experiences to all our customers. We insist on using the best ingredients, and putting our whole heart into every order. No wonder our customers keep coming back for more!
             </p>
           </div>
         </div>
@@ -241,54 +240,45 @@
     </section><!-- End Menu Section -->
 
 
-
-    <!-- ======= Events Section ======= -->
-    <section id="events" class="events">
-    <div class="container">
-      <div class="row text-center fh5co-heading row-padded">
-        <div class="section-title">
-          <p>Deals & Seasonal items </p>
-        </div>
-      </div>
-      <script src="https://apps.elfsight.com/p/platform.js" defer></script>
-      <div class="elfsight-app-3c5d9266-988c-4548-9e35-f6439ee44b0a"></div>
+  <!-- ======= Events Section ======= -->
+  <section id="events" class="events">
+    <div class="section-title container">
+      <p>Where to find me!</p>
     </div>
-    </section><!-- End Events Section -->
+    <ul class="juicer-feed" data-feed-id="dripndip"></ul>
+  </section>
+  <!-- End Events Section -->
 
-    <!-- ======= Book A Table Section ======= -->
+
+
+
+
+    <!-- ======= get a quote ======= -->
     <section id="book-a-table" class="book-a-table">
       <div class="container" data-aos="fade-up">
 
         <div class="section-title">
           <h2>Order</h2>
           <p>Start a Quote</p>
-          All order must be placed & paid a minimum of 24 before date needed.
+          All order must be placed & paid a minimum of 24 hours before date needed.
         </div>
 
-        <form action="forms/book-a-table.php" method="post" role="form" class="php-email-form" data-aos="fade-up" data-aos-delay="100">
+        <form id="order-form" class="formSubmit"  action="https://formsubmit.co/dripndip.treats@gmail.com" method="POST"> 
           <div class="row">
-            <div class="col-lg-4 col-md-6 form-group">
-              <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars">
+            <div class=" col-md-6 form-group">
+              <input type="text" name="order-name" class="form-control" id="order-name" placeholder="Your Name">
               <div class="validate"></div>
             </div>
-            <div class="col-lg-4 col-md-6 form-group mt-3 mt-md-0">
-              <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email">
+            <div class="col-md-6 form-group mt-3 mt-md-0">
+              <input type="email" class="form-control" name="email" id="email" placeholder="Your Email">
               <div class="validate"></div>
             </div>
-            <div class="col-lg-4 col-md-6 form-group mt-3 mt-md-0">
-              <input type="text" class="form-control" name="phone" id="phone" placeholder="Your Phone" data-rule="minlen:4" data-msg="Please enter at least 4 chars">
+            <div class="col-md-6 form-group mt-3">
+              <input type="text" class="form-control" name="phone" id="phone" placeholder="Your Phone">
               <div class="validate"></div>
             </div>
-            <div class="col-lg-4 col-md-6 form-group mt-3">
-              <input type="text" name="date" class="form-control" id="date" placeholder="Date of event" data-rule="minlen:4" data-msg="Please enter at least 4 chars">
-              <div class="validate"></div>
-            </div>
-            <div class="col-lg-4 col-md-6 form-group mt-3">
-              <input type="text" class="form-control" name="time" id="time" placeholder="Time needed" data-rule="minlen:4" data-msg="Please enter at least 4 chars">
-              <div class="validate"></div>
-            </div>
-            <div class="col-lg-4 col-md-6 form-group mt-3">
-              <input type="number" class="form-control" name="people" id="people" placeholder="Quantity of Items" data-rule="minlen:1" data-msg="Please enter at least 1 chars">
+            <div class="col-md-6 form-group mt-3">
+              <input type="text" name="date" class="form-control" id="date" placeholder="Date of event">
               <div class="validate"></div>
             </div>
           </div>
@@ -296,14 +286,11 @@
             <textarea class="form-control" name="message" rows="5" placeholder="Message"></textarea>
             <div class="validate"></div>
           </div>
-          <div class="mb-3">
-            <div class="loading">Loading</div>
-            <div class="error-message"></div>
-            <div class="sent-message">Your booking request was sent. We will call back or send an Email to confirm your reservation. Thank you!</div>
-          </div>
+          <input type="hidden" name="_next" value="http://gerlinpl.com/drip-n-dip/thank.html">
+          <input type="hidden" name="_template" value="table">
+          <input type="hidden" name="_subject" value="Order" id="orderSubject">
           <div class="text-center"><button type="submit">Get a quote</button></div>
         </form>
-
       </div>
     </section><!-- End Book A Table Section -->
 
@@ -316,18 +303,31 @@
       <div class="container" data-aos="fade-up">
         <div class="section-title">
           <h2>Gallery</h2>
-          <p>Some photos of Our work</p>
+          <p>Some photos of our work</p>
         </div>
       </div>
 
       <div class="container-fluid" data-aos="fade-up" data-aos-delay="100">
 
         <div class="row g-0">
-
           <div class="col-lg-3 col-md-4">
             <div class="gallery-item">
               <a href="assets/img/gallery/gallery-1.jpg" class="gallery-lightbox" data-gall="gallery-item">
                 <img src="assets/img/gallery/gallery-1.jpg" alt="" class="img-fluid">
+              </a>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4">
+            <div class="gallery-item">
+              <a href="assets/img/gallery/v01.jpg" class="gallery-lightbox" data-gall="gallery-item">
+                <img src="assets/img/gallery/v01.jpg" alt="" class="img-fluid">
+              </a>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4">
+            <div class="gallery-item">
+              <a href="assets/img/gallery/v04.jpg" class="gallery-lightbox" data-gall="gallery-item">
+                <img src="assets/img/gallery/v04.jpg" alt="" class="img-fluid">
               </a>
             </div>
           </div>
@@ -342,8 +342,8 @@
 
           <div class="col-lg-3 col-md-4">
             <div class="gallery-item">
-              <a href="assets/img/gallery/gallery-3.jpg" class="gallery-lightbox" data-gall="gallery-item">
-                <img src="assets/img/gallery/gallery-3.jpg" alt="" class="img-fluid">
+              <a href="assets/img/gallery/v03.jpg" class="gallery-lightbox" data-gall="gallery-item">
+                <img src="assets/img/gallery/v03.jpg" alt="" class="img-fluid">
               </a>
             </div>
           </div>
@@ -406,8 +406,8 @@
 
           <div class="col-lg-3 col-md-4">
             <div class="gallery-item">
-              <a href="assets/img/gallery/gallery-11.jpg" class="gallery-lightbox" data-gall="gallery-item">
-                <img src="assets/img/gallery/gallery-11.jpg" alt="" class="img-fluid">
+              <a href="assets/img/gallery/v05.jpg" class="gallery-lightbox" data-gall="gallery-item">
+                <img src="assets/img/gallery/v05.jpg" alt="" class="img-fluid">
               </a>
             </div>
           </div>
@@ -420,6 +420,22 @@
             </div>
           </div>
 
+          <div class="col-lg-3 col-md-4">
+            <div class="gallery-item">
+              <a href="assets/img/gallery/gallery-11.jpg" class="gallery-lightbox" data-gall="gallery-item">
+                <img src="assets/img/gallery/gallery-11.jpg" alt="" class="img-fluid">
+              </a>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4">
+            <div class="gallery-item">
+              <a href="assets/img/gallery/gallery-3.jpg" class="gallery-lightbox" data-gall="gallery-item">
+                <img src="assets/img/gallery/gallery-3.jpg" alt="" class="img-fluid">
+              </a>
+            </div>
+          </div>
+
         </div>
 
       </div>
@@ -428,71 +444,45 @@
 
     <!-- ======= Contact Section ======= -->
     <section id="contact" class="contact">
-      <div class="container" data-aos="fade-up">
+      <div class="container text-center" data-aos="fade-up">
 
         <div class="section-title">
-          <h2>Contact</h2>
           <p>Contact Us</p>
           Please reach out for any questions.
         </div>
       </div>
 
 
-      <div class="container" data-aos="fade-up">
+      <div data-aos="fade-up">
 
-        <div class="row mt-5">
 
-          <div class="col-lg-4">
-            <div class="info">
-              <div class="email">
-                <i class="bi bi-envelope"></i>
-                <h4>Email:</h4>
-                <p>dripndip.treats@gmail.com</p>
-              </div>
 
-              <div class="phone">
-                <i class="bi bi-phone"></i>
-                <h4>Call:</h4>
-                <p>(508)-343-8901</p>
-              </div>
+            <div class="info d-md-flex justify-content-evenly container">      
+              
+              
+<!-- 
+                <div class="phone">
+                  <i class="bi bi-phone"></i>
+                  <h4>Call:</h4>
+                  <p><a href="tel:+1-508-343-8901">508-343-8901</a></p>
+                </div> -->
+
+                <div class="email">
+                  <i class="bi bi-envelope"></i>
+                  <h4>Email:</h4>
+                  <p><a href="mailto:john@example.com">dripndip.treats@gmail.com</a></p>
+                </div>
+
+
 
             </div>
-
-          </div>
-
-          <div class="col-lg-8 mt-5 mt-lg-0">
-
-            <form action="forms/contact.php" method="post" role="form" class="php-email-form">
-              <div class="row">
-                <div class="col-md-6 form-group">
-                  <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
-                </div>
-                <div class="col-md-6 form-group mt-3 mt-md-0">
-                  <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
-                </div>
-              </div>
-              <div class="form-group mt-3">
-                <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
-              </div>
-              <div class="form-group mt-3">
-                <textarea class="form-control" name="message" rows="8" placeholder="Message" required></textarea>
-              </div>
-              <div class="my-3">
-                <div class="loading">Loading</div>
-                <div class="error-message"></div>
-                <div class="sent-message">Your message has been sent. Thank you!</div>
-              </div>
-              <div class="text-center"><button type="submit">Send Message</button></div>
-            </form>
-
-          </div>
-
-        </div>
 
       </div>
     </section><!-- End Contact Section -->
 
   </main><!-- End #main -->
+
+
 
   <!-- ======= Footer ======= -->
   <footer id="footer">
@@ -505,9 +495,9 @@
               <h3>Drip N Dip</h3>
 
               <div class="social-links mt-3 ">
-                <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
-                <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
-                <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
+                <a href="https://mobile.twitter.com/dripndip/status/1461578392260825090" class="twitter" target="_blank"><i class="bx bxl-twitter" ></i></a>
+                <a href="https://m.facebook.com/profile.php?id=100054802867030" class="facebook" target="_blank"><i class="bx bxl-facebook" ></i></a>
+                <a href="https://www.instagram.com/_dripndip_/" class="instagram" target="_blank"><i class="bx bxl-instagram"></i></a>
               </div>
             </div>
           </div>
@@ -521,11 +511,7 @@
         &copy; Copyright <strong><span>Drip N Dip</span></strong>. All Rights Reserved
       </div>
       <div class="credits">
-        <!-- All the links in the footer should remain intact. -->
-        <!-- You can delete the links only if you purchased the pro version. -->
-        <!-- Licensing information: https://bootstrapmade.com/license/ -->
-        <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/restaurantly-restaurant-template/ -->
-        Designed by <a href="https://bootstrapmade.com/">Gerlin Pierre-Louis</a>
+        Designed by <a href="https://gerlinpl.com/">Gerlin Pierre-Louis</a>
       </div>
     </div>
   </footer><!-- End Footer -->
@@ -542,6 +528,7 @@
   <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
 
   <!-- Template Main JS File -->
+  <script src="https://assets.juicer.io/embed.js" type="text/javascript"></script>
   <script src="assets/js/main.js"></script>
 
 </body>
